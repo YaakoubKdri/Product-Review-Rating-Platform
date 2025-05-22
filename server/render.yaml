@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: product-reviews-api
+    env: node
+    buildCommand: npm install
+    startCommand: node dist/server.js
+    plan: free
+    envVars:
+      - key: MONGODB_URI
+        value: replace_with_your_mongo_uri
+    autoDeploy: true
+
