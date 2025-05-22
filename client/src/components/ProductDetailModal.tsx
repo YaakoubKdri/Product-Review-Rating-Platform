@@ -21,7 +21,6 @@ const ProductDetailModal: React.FC<Props> = ({ productId, onClose }) => {
   const [showFormModal, setShowFormModal] = useState(false);
   const [editingReview, setEditingReview] = useState<Review | null>(null);
 
-  // Unified refresh
   const refreshData = () => {
     fetchProductById(productId).then(setProduct);
     fetchReviews(productId).then(setReviews);
@@ -75,7 +74,7 @@ const ProductDetailModal: React.FC<Props> = ({ productId, onClose }) => {
         <div className="product-details">
           <p className="detail">Category: <span className="value">{product.category}</span></p>
           <p className="detail">Price: <span className="value price">${product.price.toFixed(2)}</span></p>
-          <p className="detail">Rating: <span className="value rating">{product.averageRating.toFixed(1)}</span> ★ (<span className="review-count">{product.reviewCount}</span> reviews)</p>
+          <p className="detail">Rating: <span className="value rating">{product.averageRating.toFixed(1)}</span> (<span className="review-count">{product.reviewCount}</span> reviews)</p>
         </div>
 
         <h3 className="reviews-title">Reviews</h3>

@@ -1,7 +1,6 @@
-//ProductCard.tsx
 import React from "react";
 import { Product } from "../types";
-import "../styles/ProductCard.css";
+import "../styles/ProductSummary.css";
 
 interface ProductCardProps {
   product: Product;

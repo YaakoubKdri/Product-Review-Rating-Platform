@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchProducts } from "../services/dataService";
-import ProductCard from "../components/ProductCard";
+import ProductSummary from "../components/ProductSummary";
 import FilterBar from "../components/FilterBar";
 import ProductDetailModal from "../components/ProductDetailModal";
 import ProductFormModal from "../components/ProductFormModal";
@@ -80,7 +80,7 @@ const HomePage: React.FC = () => {
       />
       <div className="product-grid">
         {products.map((product) => (
-          <ProductCard
+          <ProductSummary
             key={product.id}
             product={product}
             onViewDetails={handleViewDetails}
