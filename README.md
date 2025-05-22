@@ -8,7 +8,7 @@ You can run the project using a **Split Terminal in VS Code**:
     npx ts-node src/server.ts
     ```
 3.  **Split the terminal**: In the terminal panel, you should see a split button (often an icon that looks like a plus sign next to the terminal name or in the top-right corner of the terminal panel). Click this button to create a new terminal within the same panel.
-4.  In the **new terminal window**, navigate to your client directory and start the development server:
+4.  In the **new terminal window**, navigate to your client directory and simply run:
     ```bash
     cd ../client
     npm run dev
